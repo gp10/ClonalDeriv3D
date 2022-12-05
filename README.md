@@ -20,16 +20,16 @@ Given optimum parameter values, we can run realistic simulations of clone dynami
 - **Analysis-ClonalPersis-plot.m** : represents the experimental number of surviving clones over time and allows to overlay the results from the optimum theoretical SP-model fit by loading `paramFit_optim.mat`. Alternatively, it provides the independent, best fit to the average clone size, saved in `paramFit_decay.mat` file.
 - **Analysis-TotalLabelledArea-plot.m** : represents the total labelled area (or sum of all clone sizes) over time and allows to overlay the results from the optimum theoretical SP-model fit by loading `paramFit_optim.mat`.
 - **Analysis-Simul-2Dgrid.m** : main script to run 2D simulations of clone competition in a 2D lattice and plot the results overlaid on those of the experimental data (average clone size, clone density and total labelled area individual scripts are called). Simulation outcome is shown accompanied by plausible intervals computed from permutation-made subsets that represent limited sample sizes equivalent to those found in the experimental data.
-  + Simulation outcome is stored in the ==Simulation_data== folder as a `.mat` file.
+  + Simulation outcome is stored in the `Simulation_data` folder as a `.mat` file.
 - **plot_Simul_2Dmovie.m** : represents 2D views of the simulated basal, progenitor cell lattice highlighting simulated clone areas at different time points, and allows to save a video of the simulated clone dynamics.
 
 ### Dependencies
 - **ClonalData-invitro.mat** : Contains the experimental clonal dataset.
 - **Simul-2Dgrid-SPdynamics.m** : Simulator of SP-model clone competition dynamics in a 2D lattice grid. Used in all scripts for model simulations.
 - freezeColors.m : Required for color layout in plot_Simul_2Dmovie.m.
-- ==Simulation_data== folder : contains results from 2D lattice simulations of clone dynamics.
+- `Simulation_data` folder : contains results from 2D lattice simulations of clone dynamics.
 
 ### Requirements
-Matlab (built & tested on version R2020b)
-No dependencies needed
-Runs on all OS
+- Matlab (built & tested on version R2020b)
+- No dependencies needed
+- Runs on all OS
